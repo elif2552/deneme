@@ -4,15 +4,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#009688"
+    tools:context=".MainActivity" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:background="#00DB5454"
+            android:backgroundTint="#F44336"
+            android:baselineAligned="false"
+            android:foregroundTint="#E91E63"
+            android:orientation="horizontal"
+            android:paddingTop="32dp">
+
+            <ImageView
+                android:id="@+id/imageViewProfilFoto"
+                android:layout_width="62dp"
+                android:layout_height="66dp"
+                app:srcCompat="@drawable/bd886d7ccc6f8dd8db17e841233c9656" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTextAdSoyad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name" />
+
+                <TextView
+                    android:id="@+id/textViewAdSoyad"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:paddingTop="32dp"
+                    android:text="Ad soyad" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonSetText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set TEXT" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
